@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Animation</title>
+    <style>
+        @keyframes sliding {
+            0% {
+                background-color: limegreen;
+
+
+            }
+
+            50% {
+                top: 200px;
+                left: 150px;
+            }
+
+            100% {
+                background-color: magenta;
+                left: 300px;
+                top: 0%;
+
+
+
+            }
+
+
+        }
+
+
+        @keyframes slidin {
+            0% {
+                background-color: limegreen;
+                left: 0;
+                top: 0;
+
+
+            }
+
+            25% {
+                top: 200px;
+                background: tomato;
+
+            }
+
+            50% {
+                top: 0;
+                background: rgb(0, 255, 98);
+
+            }
+
+            75% {
+                top: 200px;
+                background: goldenrod;
+
+            }
+
+
+
+            100% {
+                background-color: rgb(194, 35, 194);
+                top: 0;
+                left: 600px;
+
+
+
+
+            }
+
+
+        }
+
+        .stage {
+
+            width: 400px;
+            height: 350px;
+            background: rgb(19, 44, 64);
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .ball {
+            width: 80px;
+            height: 80px;
+            position: relative;
+
+            background-color: limegreen;
+            border-radius: 50%;
+            animation: sliding 3s ease-in-out 0.5s infinite alternate;
+            animation-play-state: running;
+        }
+
+        .stage2 {
+            width: 85%;
+            height: 350px;
+            background: rgb(60, 104, 139);
+            border-radius: 10px;
+            margin: auto;
+            margin-bottom: 30px;
+
+
+        }
+
+        body {
+            margin: 0;
+
+
+            padding-top: 30px;
+
+            background: #000;
+        }
+
+        .ball2 {
+            width: 80px;
+            height: 80px;
+            position: relative;
+
+            background-color: limegreen;
+            border-radius: 50%;
+            animation: slidin 3s ease-in-out 0.5s infinite alternate;
+            animation-play-state: running;
+
+        }
+
+        h1 {
+            color: beige;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            padding-bottom: 30px;
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Les't explore Animation</h1>
+    <div class="stage">
+        <div class="ball">
+
+        </div>
+    </div>
+    <div class="stage2">
+        <div class="ball2">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
